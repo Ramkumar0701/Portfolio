@@ -1,53 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ram Kumar R S - Portfolio</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ram Kumar R S - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="bg-dark text-white text-center py-4">
-    <h1>Ram Kumar R S</h1>
-    <p>Python & Django Developer | Madurai, TN</p>
-  </header>
 
-  <section class="container my-5">
-    <h2>Summary</h2>
-    <p>Results-driven Python and Django Application Developer with 5 years of experience in designing and developing scalable, high-performance web applications...</p>
-
-    <h2>Skills</h2>
-    <ul>
-      <li>Python, Django, Flask, RESTful APIs</li>
-      <li>HTML5, CSS3, JavaScript, Bootstrap, jQuery</li>
-      <li>SQL, PostgreSQL, MySQL</li>
-      <li>Docker, Gunicorn, Nginx</li>
-    </ul>
-
-    <h2>Experience</h2>
-    <div>
-      <h5>Sparky Entertainment - Django Python Developer (May 2024 - Present)</h5>
-      <p>Developing internal website for reviewing animation shots and assets...</p>
+<!-- Hero Section -->
+<section class="hero text-center text-white d-flex align-items-center justify-content-center flex-column">
+    <img src="images/RAM_Photo.jpeg" alt="Ram Kumar" class="profile-img mb-3">
+    <h1 class="fw-bold">Ram Kumar R S</h1>
+    <p class="lead">Python & Django Developer</p>
+    <div class="mt-3">
+        <a href="Ram_Kumar_CV.pdf" class="btn btn-warning me-2" target="_blank"><i class="fa fa-file-pdf"></i> Download Resume</a>
+        <a href="#contact" class="btn btn-outline-light"><i class="fa fa-envelope"></i> Contact Me</a>
     </div>
-    <div>
-      <h5>Atos Syntel - Associate Consultant (Jun 2021 - Oct 2023)</h5>
-      <p>Worked as Python backend developer for Siemens Energy...</p>
+</section>
+
+<!-- About -->
+<section id="about" class="container py-5">
+    <h2 class="text-center mb-4">About Me</h2>
+    <p class="text-center">Results-driven Python and Django Application Developer with 5 years of experience in designing and developing scalable, high-performance web applications. Skilled in both front-end and back-end development, with expertise in relational databases, API integrations, and production deployment.</p>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Skills</h2>
+        <div class="row text-center">
+            <div class="col-md-3"><i class="fab fa-python fa-3x mb-2"></i><p>Python</p></div>
+            <div class="col-md-3"><i class="fab fa-django fa-3x mb-2"></i><p>Django</p></div>
+            <div class="col-md-3"><i class="fas fa-database fa-3x mb-2"></i><p>PostgreSQL / MySQL</p></div>
+            <div class="col-md-3"><i class="fas fa-cloud fa-3x mb-2"></i><p>Docker, Nginx</p></div>
+        </div>
     </div>
-    <div>
-      <h5>Sugi Infotech - Junior Programmer (Dec 2020 - May 2021)</h5>
-      <p>Developed and maintained dynamic web applications using Django...</p>
+</section>
+
+<!-- Experience -->
+<section id="experience" class="container py-5">
+    <h2 class="text-center mb-4">Experience</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Django Python Developer</h5>
+                    <p class="card-text"><strong>Sparky Entertainment</strong> (May 2024 - Present)</p>
+                    <p>Developing internal website for reviewing animation shots and assets...</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Associate Consultant</h5>
+                    <p class="card-text"><strong>Atos Syntel</strong> (Jun 2021 - Oct 2023)</p>
+                    <p>Worked as Python backend developer for Siemens Energy...</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Junior Programmer</h5>
+                    <p class="card-text"><strong>Sugi Infotech</strong> (Dec 2020 - May 2021)</p>
+                    <p>Developed and maintained dynamic web applications using Django...</p>
+                </div>
+            </div>
+        </div>
     </div>
+</section>
 
-    <h2>Education</h2>
-    <p>Bachelor of Engineering in Computer Science - Sethu Institute of Technology (2016 - 2020)</p>
+<!-- Education -->
+<section id="education" class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Education</h2>
+        <p class="text-center">Bachelor of Engineering in Computer Science - Sethu Institute of Technology (2016 - 2020)</p>
+    </div>
+</section>
 
-    <h2>Contact</h2>
-    <p>Email: ramkumarrs07011999@gmail.com | Phone: +91 9360159355</p>
-  </section>
+<!-- Contact -->
+<section id="contact" class="container py-5">
+    <h2 class="text-center mb-4">Contact Me</h2>
+    <form action="https://formspree.io/f/xwkgrjle" method="POST" class="mx-auto" style="max-width:500px;">
+        <div class="mb-3">
+            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+        </div>
+        <div class="mb-3">
+            <input type="email" name="_replyto" class="form-control" placeholder="Your Email" required>
+        </div>
+        <div class="mb-3">
+            <textarea name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+    </form>
+</section>
 
-  <footer class="bg-dark text-white text-center py-3">
-    <p>&copy; 2025 Ram Kumar R S</p>
-  </footer>
+<footer class="text-center py-3 bg-dark text-white">
+    &copy; 2025 Ram Kumar R S | Built with ❤️ using Bootstrap
+</footer>
+
 </body>
 </html>
